@@ -1,0 +1,8 @@
+Exception in thread "main" com.oracle.svm.core.jdk.UnsupportedFeatureError: Trying to verify a provider that was not registered at build time: BC version 1.59. All providers must be registered and verified in the Native Image builder.
+        at org.graalvm.nativeimage.builder/com.oracle.svm.core.util.VMError.unsupportedFeature(VMError.java:89)
+        at java.base@17.0.6/javax.crypto.JceSecurity.getVerificationResult(JceSecurity.java:380)
+        at java.base@17.0.6/javax.crypto.Cipher.getInstance(Cipher.java:718)
+        at java.base@17.0.6/javax.crypto.Cipher.getInstance(Cipher.java:642)
+        at com.example.demo.SM4Util.encrypt(SM4Util.java:92)
+        at com.example.demo.SmdemoApplication.sm4Test(SmdemoApplication.java:25)
+        at com.example.demo.SmdemoApplication.main(SmdemoApplication.java:21)
