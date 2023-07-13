@@ -42,7 +42,6 @@ public class SmdemoApplication {
         @Override
         public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
             try {
-                //no such algorithm: SM3 for provider BC
                 hints.reflection().registerType(SM4.class, MemberCategory.INVOKE_DECLARED_METHODS, MemberCategory.INVOKE_DECLARED_CONSTRUCTORS);//好像是mappings
                 hints.reflection().registerType(SM4.Mappings.class, MemberCategory.INVOKE_DECLARED_METHODS, MemberCategory.INVOKE_DECLARED_CONSTRUCTORS);//好像是mappings
                 hints.reflection().registerType(SM4.ECB.class, MemberCategory.INVOKE_DECLARED_METHODS, MemberCategory.INVOKE_DECLARED_CONSTRUCTORS);//好像是mappings
