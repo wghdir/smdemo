@@ -6,3 +6,5 @@ Exception in thread "main" com.oracle.svm.core.jdk.UnsupportedFeatureError: Tryi
         at com.example.demo.SM4Util.encrypt(SM4Util.java:92)
         at com.example.demo.SmdemoApplication.sm4Test(SmdemoApplication.java:25)
         at com.example.demo.SmdemoApplication.main(SmdemoApplication.java:21)
+1.不能访问时运行下
+git config --global http.sslVerify false
